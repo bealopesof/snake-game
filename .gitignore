@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# ==== VS Code ====
+.vscode/
+*.code-workspace
+
+# ==== SO ====
+.DS_Store
+Thumbs.db
