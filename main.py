@@ -37,14 +37,14 @@ def jogar():
 
         # Parede
         if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
-            game_is_on = False
-            score.game_over()
+            score.reset()
+            snake.reset()
 
         # Corpo
         for segment in snake.segments[1:]:
             if snake.head.distance(segment) < 10:
-                game_is_on = False
-                score.game_over()
+                score.reset()
+                snake.reset()
 
 # --- LOOP PRINCIPAL DO JOGO ---
 jogar()
